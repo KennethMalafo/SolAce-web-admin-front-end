@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Staff</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/sidebar.css">
+  <link rel="stylesheet" href="../css/log out.css">
+  <link rel="stylesheet" href="../css/add_staff.css">
+</head>
+<body>
+
+<!-- Sidebar -->
+<div class="sidebar">
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="dashboard.html">
+        <img src="../assets/images/dashboard.svg" alt="Dashboard">
+        
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link active" href="add_staff.html">
+        <img src="../assets/images/add_staff dark.svg" alt="Add Staff">
+        
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="staff_management.html">
+        <img src="../assets/images/staff_management.svg" alt="Staff Management">
+        
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="reports.html">
+        <img src="../assets/images/reports.svg" alt="Reports">
+        
+      </a>
+    </li>
+  </ul>
+
+    <!-- Logout button -->
+    <div class="logout">
+      <img src="../assets/images/logout 1.svg" alt="Logout" id="logout-btn">
+    </div>
+</div>
+
+<!-- Page content -->
+<div class="content">
+  <div class="container-fluid">
+    <div class="header d-flex align-items-center mb-4">
+      <!-- Left section with MDRRMO logo, text, App logo, and app name text -->
+      <div class="d-flex align-items-center">
+        <img src="../assets/images/mdrrmo.svg" alt="MDRRMO Logo" class="mr-2">
+        <span class="logo-text mr-2">MDRRMO Sta. Barbara</span>
+        <img src="../assets/images/solace.svg" alt="App Logo" class="mr-2">
+        <span class="app-name">SolAce Flood Monitoring</span>
+      </div>
+    </div>
+    
+    <!-- Text below the header -->
+    <div class="staff-profile-text">
+      <span>Staff Profile</span>
+    </div>
+
+    <!-- Second row -->
+    <div class="section-row">
+      <div class="col-md-12">
+        <hr class="hr-long">
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="../assets/images/juan.svg" class="card-img-top img-fluid" alt="Profile Picture" style="width: 200px; height: 200px; margin-left: 30px; margin-top: 30px;">
+      <div class="card-body">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item" style="color: black;">Email: juandelacruz@gmail.com</li>
+          <li class="list-group-item" style="color: black;">Contact Number: 09902025060</li>
+          <li class="list-group-item" style="color: black;">Address: Sta. Barbara</li>
+          <li class="list-group-item" style="color: black;">Birthday: 12/09/1989</li>
+        </ul>
+      </div>
+      </div>
+       
+
+  </div>
+</div>
+
+<!-- Logout Confirmation Modal -->
+<div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="logoutModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="logoutModalLabel">Confirm Logout</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Are you sure you want to logout?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+        <button type="button" class="btn btn-primary" id="confirmLogout">Yes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="../js/logout.js"></script>
+
+</body>
+</html>
